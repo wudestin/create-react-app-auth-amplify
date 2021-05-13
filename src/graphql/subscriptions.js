@@ -1,15 +1,39 @@
-import { API, graphqlOperation } from 'aws-amplify';
-import { onCreateTodo } from './graphql/subscriptions';
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
 
-// Subscribe to creation of Todo
-const subscription = API.graphql(
-    graphqlOperation(onCreateTodo)
-).subscribe({
-    next: (todoData) => {
-      console.log(todoData);
-      // Do something with the data
+export const onCreateTodo = /* GraphQL */ `
+  subscription OnCreateTodo {
+    onCreateTodo {
+      id
+      name
+      description
+      priority
+      createdAt
+      updatedAt
     }
-});
-
-// Stop receiving data updates from the subscription
-subscription.unsubscribe();
+  }
+`;
+export const onUpdateTodo = /* GraphQL */ `
+  subscription OnUpdateTodo {
+    onUpdateTodo {
+      id
+      name
+      description
+      priority
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteTodo = /* GraphQL */ `
+  subscription OnDeleteTodo {
+    onDeleteTodo {
+      id
+      name
+      description
+      priority
+      createdAt
+      updatedAt
+    }
+  }
+`;
