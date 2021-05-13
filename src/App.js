@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Game from './Game'
 import { withAuthenticator } from 'aws-amplify-react'
 import Amplify, { Auth, API } from 'aws-amplify';
 import aws_exports, { awsconfig } from './aws-exports';
@@ -17,9 +18,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <Game/>
           <a
             className="App-link"
             href="https://reactjs.org"
