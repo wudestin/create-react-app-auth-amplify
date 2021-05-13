@@ -3,13 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Game from './Game'
 import { withAuthenticator } from 'aws-amplify-react'
-import Amplify, { Auth, API } from 'aws-amplify';
-import aws_exports, { awsconfig } from './aws-exports';
-
-import * as queries from './graphql/queries';
-import * as mutations from './graphql/mutations';
-import * as subscriptions from './graphql/subscriptions';
-
+import Amplify, { Auth } from 'aws-amplify';
+import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 
 class App extends Component {
@@ -18,7 +13,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+<<<<<<< HEAD
           <Game/>
+=======
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+>>>>>>> parent of d9dbe3c... Implemented ListTodos
           <a
             className="App-link"
             href="https://reactjs.org"
