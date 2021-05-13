@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { withAuthenticator } from 'aws-amplify-react';
 
 function Square(props) {
   return (
@@ -146,3 +147,4 @@ function calculateWinner(squares) {
   return null;
 }
   
+export default withAuthenticator(Game, true);
