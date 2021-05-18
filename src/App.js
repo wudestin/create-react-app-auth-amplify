@@ -13,8 +13,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <List/>
-          <Game/>
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
@@ -24,6 +22,8 @@ class App extends Component {
           >
             Learn React
           </a>
+          <List/>
+          <Game/>
         </header>
       </div>
     );
