@@ -12,9 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <List/>
-        <Game/>
         <header className="App-header">
+          <List/>
+          <Game/>
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
