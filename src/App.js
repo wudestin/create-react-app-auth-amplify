@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Game from './Game';
+import List from './List';
 import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator } from 'aws-amplify-react';
