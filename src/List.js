@@ -44,7 +44,7 @@ class List extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: getItems(10)
+      items: getItems(5)
     };
     this.onDragEnd = this.onDragEnd.bind(this);
   }
