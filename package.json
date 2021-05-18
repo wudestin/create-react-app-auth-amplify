@@ -11,6 +11,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
+    "react-beaultiful-dnd": "13.0.0",
     "axios": "^0.21.1",
     "serialize-javascript": "^3.1.0",
     "node-forge": "^0.10.0",
