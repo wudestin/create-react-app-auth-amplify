@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { withAuthenticator } from 'aws-amplify-react';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
