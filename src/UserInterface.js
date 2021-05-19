@@ -4,15 +4,17 @@ import { withAuthenticator } from 'aws-amplify-react';
 
 const TextArea = ({ value, handleChange, handleSubmit }) => (
     <div>
+        <br/>
         <form>
-        <input type="textarea" 
-            name="textValue"
-            placeholder="Source URLs"
-            value={value}
-            onChange={handleChange}
-        />
-        <button onClick={handleSubmit}>Submit Test</button>
+            <textarea
+                name="sourceURL"
+                placeholder="Source URL"
+                value={value}
+                onChange={handleChange}
+            />
+            <button onClick={handleSubmit}>Submit Test</button>
         </form>
+        <br/>
     </div>
 )
 
@@ -33,7 +35,7 @@ class UserInterface extends Component {
     }
     
     handleSubmit() {
-        let urlList = this.state.values.split(/\r?\n/);
+        let urlList = this.state.value.split(/\r?\n/);
         alert(urlList);
     }
     
