@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Game from './Game';
-import List from './List';
-import UserInterface from './UserInterface';
 import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator } from 'aws-amplify-react';
 import Amplify, { Auth } from 'aws-amplify';
 import aws_exports from './aws-exports';
+import Game from './Game';
+import List from './List';
 import UserInterface from './UserInterface';
+
 Amplify.configure(aws_exports);
 
 class App extends Component {
